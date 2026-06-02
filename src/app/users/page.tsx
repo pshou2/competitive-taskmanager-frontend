@@ -1,5 +1,5 @@
 export default async function Page() {
-  const data = await fetch('http://localhost:5000/api/users');
+  const data = await fetch(`${process.env.SERVER_URL}/users`);
   const users = await data.json();
   return (
     <ul>
