@@ -1,4 +1,4 @@
-import { User } from "@/src/types/user";
+import type { User } from "@/src/types/user";
 
 export default async function Page() {
   const data = await fetch(`${process.env.SERVER_URL}/users`);
