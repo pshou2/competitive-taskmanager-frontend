@@ -6,7 +6,7 @@ export default function Page() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
-    const handleLogin = async (event) => {
+    const handleLogin = async (event: React.SubmitEvent<HTMLFormElement>) => {
         event.preventDefault();
 
         try {
