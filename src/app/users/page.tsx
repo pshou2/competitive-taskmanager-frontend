@@ -1,7 +1,6 @@
 import type { User } from "@/src/types/user";
 
 export default async function Page() {
-  console.log(`${process.env.SERVER_URL}/users`);
   const data = await fetch(`${process.env.SERVER_URL}/users`);
   const users: User[] = await data.json();
 
